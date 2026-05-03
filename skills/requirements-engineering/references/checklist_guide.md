@@ -1,7 +1,5 @@
 # Requirements Phase Checklist Guide
 
----
-
 ## Initial Requirements Gathering
 
 ### Content Quality
