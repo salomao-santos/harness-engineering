@@ -6,6 +6,5 @@
     "url": "https://github.com/salomao-santos"
   },
   "version": "1.0.0",
-  "license": "MIT",
-  "compatibility": ["Claude Code", "Cursor", "VS Code", "Windsurf", "Kiro", "Github Copilot", "Antigravity"]
+  "license": "MIT"
 }

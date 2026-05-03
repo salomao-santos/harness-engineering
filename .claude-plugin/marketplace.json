@@ -1,0 +1,17 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "harness-engineering",
+  "description": "Software engineering methodology skills for the full delivery lifecycle: requirements → design → implementation tasks.",
+  "owner": {
+    "name": "salomao-santos",
+    "url": "https://github.com/salomao-santos"
+  },
+  "plugins": [
+    {
+      "name": "harness-engineering",
+      "description": "Requirements, design, and implementation tasks skills for structured software delivery.",
+      "source": "./",
+      "category": "methodology"
+    }
+  ]
+}
