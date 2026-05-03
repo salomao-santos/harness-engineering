@@ -1,0 +1,2 @@
+description = "Transform a feature idea into a structured requirements document using EARS format"
+prompt = "Use the requirements-engineering skill. Follow the 6-step workflow: analyze the request, build the glossary, capture user stories, generate acceptance criteria (EARS format), identify edge cases, validate and deliver. Feature or system to specify: {{args}}"

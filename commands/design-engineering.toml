@@ -1,0 +1,2 @@
+description = "Transform approved requirements into a comprehensive technical design document"
+prompt = "Use the design-engineering skill. Transform the requirements into a full design.md covering architecture decisions, component list, TypeScript types, SQL schema, API endpoints, UI components, data flow, and directory structure. Requirements or system to design: {{args}}"

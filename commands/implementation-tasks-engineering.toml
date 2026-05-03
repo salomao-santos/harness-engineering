@@ -1,0 +1,2 @@
+description = "Transform approved design into a sequenced, incremental implementation plan (tasks.md)"
+prompt = "Use the implementation-tasks-engineering skill. Follow the 7-step workflow: analyze inputs, write overview, map design to implementation units, sequence tasks by phase, write task details, add checkpoints and PBT tasks, validate and deliver. Feature or system: {{args}}"
