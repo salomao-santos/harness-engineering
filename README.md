@@ -8,9 +8,9 @@ Software engineering methodology plugin for Claude Code. Covers the full deliver
 
 | Skill | Trigger | Purpose |
 |-------|---------|---------|
-| `requirements-engineering` | `/requirements-engineering` | Transform a vague feature idea into a structured requirements doc (EARS format) |
-| `design-engineering` | `/design-engineering` | Transform approved requirements into a technical design doc |
-| `implementation-tasks-engineering` | `/implementation-tasks-engineering` | Transform approved design into a sequenced implementation plan (`tasks.md`) |
+| `requirements-engineering` | `/harness:requirements-engineering` | Transform a vague feature idea into a structured requirements doc (EARS format) |
+| `design-engineering` | `/harness:design-engineering` | Transform approved requirements into a technical design doc |
+| `implementation-tasks-engineering` | `/harness:implementation-tasks-engineering` | Transform approved design into a sequenced implementation plan (`tasks.md`) |
 
 ---
 
@@ -23,9 +23,9 @@ claude plugin install https://github.com/salomao-santos/harness-engineering
 After installing, the slash commands are available in any project:
 
 ```
-/requirements-engineering <feature description>
-/design-engineering <feature or requirements doc>
-/implementation-tasks-engineering <design doc>
+/harness:requirements-engineering <feature description>
+/harness:design-engineering <feature or requirements doc>
+/harness:implementation-tasks-engineering <design doc>
 ```
 
 ---
@@ -48,9 +48,9 @@ skills/
 The 3 skills form a sequential pipeline:
 
 ```
-1. /requirements-engineering   →  requirements.md
-2. /design-engineering         →  design.md
-3. /implementation-tasks-engineering  →  tasks.md
+1. /harness:requirements-engineering   →  requirements.md
+2. /harness:design-engineering         →  design.md
+3. /harness:implementation-tasks-engineering  →  tasks.md
 4. Execute tasks.md top to bottom
 ```
 
