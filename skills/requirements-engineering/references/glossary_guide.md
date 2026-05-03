@@ -1,6 +1,6 @@
 # Glossary Guide
 
-The Glossary creates a shared vocabulary that eliminates ambiguity in acceptance criteria. Every term used in a requirement criterion must be defined in the Glossary first.
+The Glossary establishes a shared vocabulary that eliminates ambiguity in acceptance criteria. Every term used in a criterion must be defined here first.
 
 ## Why the Glossary Matters
 
@@ -15,7 +15,7 @@ With a Glossary, every noun in a criterion maps exactly to one definition.
 
 ## Naming Convention
 
-Use `Underscore_Case` for composite terms. This makes them behave like identifiers — unambiguous and directly reusable across criteria.
+Use `Underscore_Case` for composite terms — they behave like identifiers, unambiguous and reusable across criteria.
 
 | Informal Name | Glossary Term |
 |---|---|
@@ -31,8 +31,6 @@ Single-word terms use standard title case: `Task`, `User`, `Dashboard`, `Status`
 ---
 
 ## 4 Mandatory Categories
-
-Cover all relevant categories to ensure a complete vocabulary.
 
 ### 1. Domain Entities
 The primary objects the system manages — what gets created, updated, and deleted.

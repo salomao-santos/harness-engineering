@@ -1,12 +1,12 @@
 # Generate Acceptance Criteria Guide
 
-Acceptance criteria define exactly when a requirement is satisfied. They are the contract between stakeholders and implementers, and the direct specification for tests.
+Acceptance criteria define when a requirement is satisfied — the contract between stakeholders and implementers, and the direct specification for tests.
 
 ---
 
 ## The 7 EARS Constructions
 
-Use these 7 patterns. Mix them within a single requirement as needed.
+Use these 7 patterns, mixing them within a single requirement as needed.
 
 | # | Construction | When to Use | Example |
 |---|---|---|---|
@@ -64,7 +64,7 @@ Replace vague terms with exact specifications:
 
 ## Requirement Layering Order
 
-Generate requirements in this order to ensure complete coverage. Not every project needs all layers — include only relevant ones.
+Generate requirements in this order. Include only the layers relevant to the project.
 
 **Feature requirements (single-service, UI-facing):**
 

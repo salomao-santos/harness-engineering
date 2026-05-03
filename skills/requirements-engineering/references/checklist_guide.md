@@ -1,7 +1,5 @@
 # Requirements Phase Checklist Guide
 
-Use this checklist to ensure quality and completeness when producing a requirements document.
-
 ---
 
 ## Initial Requirements Gathering
