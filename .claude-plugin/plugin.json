@@ -1,0 +1,11 @@
+{
+  "name": "harness-engineering",
+  "description": "Software engineering methodology skills for the full delivery lifecycle: requirements → design → implementation tasks. Transforms vague ideas into testable requirements, then into technical design documents, then into sequenced, traceable implementation tasks.",
+  "author": {
+    "name": "salomao-santos",
+    "url": "https://github.com/salomao-santos"
+  },
+  "version": "1.0.0",
+  "license": "MIT",
+  "compatibility": ["Claude Code", "Cursor", "VS Code", "Windsurf", "Kiro", "Github Copilot", "Antigravity"]
+}
