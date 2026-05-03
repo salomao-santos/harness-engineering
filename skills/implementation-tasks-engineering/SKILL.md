@@ -14,7 +14,7 @@ compatibility: Claude Code, Cursor, VS Code, Windsurf, Kiro, Github Copilot, Ant
 metadata:
   category: methodology
   complexity: intermediate
-  author: Jenny Santos
+  author: Salomão da Silva Santos
   version: "1.0.0"
 ---
 

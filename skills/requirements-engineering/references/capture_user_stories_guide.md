@@ -1,6 +1,6 @@
 # Capture User Stories Guide
 
-A User Story defines WHO wants WHAT and WHY. It is the motivational anchor of each requirement — it explains the human need before the system behaviors that satisfy it are listed.
+A User Story defines who wants what and why — the human need behind each requirement.
 
 ## Format
 
@@ -14,7 +14,7 @@ Every User Story has exactly 3 elements: persona, action, and value.
 
 ## INVEST Quality Check
 
-Before finalizing a User Story, verify it passes the INVEST criteria:
+Before finalizing, verify the INVEST criteria:
 
 | Criterion | Test | Fail signal |
 |---|---|---|

@@ -1,6 +1,6 @@
 # Sample Requirements Guide
 
-Complete, filled-in examples across all requirement types. Use these as reference when writing requirements for a project.
+Complete examples across all requirement types.
 
 ---
 
