@@ -124,6 +124,6 @@ SHALL remain unchanged.
 An edge case becomes a separate requirement when it:
 - Involves a distinct User Story (different persona or different motivating value)
 - Requires its own set of UI states or user interactions
-- Has 3 or more criteria of its own
+- Would add 3 or more criteria, pushing the parent requirement's total above 8
 
 Otherwise, add it as additional `IF`/`WHEN` criteria within the existing requirement. Keep related behaviors together when the user story is the same.

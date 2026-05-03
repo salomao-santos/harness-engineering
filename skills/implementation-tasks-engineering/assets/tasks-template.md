@@ -216,7 +216,7 @@ Each task builds on the previous ones — no orphan code.
 
 ---
 
-### Phase 10 — Accessibility and Polish (Optional)
+### Phase 10 — Accessibility and Polish
 
 - [ ] 10. {Accessibility task title}
   - [ ] 10.1 {Review and ensure accessibility}
@@ -237,11 +237,11 @@ Each task builds on the previous ones — no orphan code.
 
 ---
 
-## Notes
-
-- Tasks marked with `*` are optional and can be skipped for a faster MVP
-- Each task references specific requirements for traceability
-- Checkpoints ensure incremental validation
-- Property-based tests validate universal correctness properties (e.g., serialization round-trip)
-- Unit tests validate specific examples and edge cases
-- {Language/runtime of the project}
+<!--
+  CONVENTIONS REMINDER
+  - Tasks marked with `*` are optional and can be skipped for a faster MVP
+  - Each task references specific requirements for traceability
+  - Checkpoints ensure incremental validation
+  - Property-based tests validate universal correctness properties (e.g., serialization round-trip)
+  - Unit tests validate specific examples and edge cases
+-->
