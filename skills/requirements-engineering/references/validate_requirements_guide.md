@@ -129,7 +129,7 @@ Automate the mechanical checks if the team maintains a spec repository.
 | Requirements-to-tickets traceability | GitHub Actions workflow that maps requirement IDs to open issues or epics |
 | Spec file structure | Pre-commit git hook that validates required sections exist in requirements.md |
 
-For version-controlled specs, store documents under `.kiro/specs/{feature-name}/requirements.md` and run validation on every pull request touching that path.
+For version-controlled specs, store documents under a `docs/ ` convention (e.g., `docs/features/`) and run validation on every pull request touching that path.
 
 ---
 

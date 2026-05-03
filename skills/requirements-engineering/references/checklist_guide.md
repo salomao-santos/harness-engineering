@@ -1,5 +1,32 @@
 # Requirements Phase Checklist Guide
 
+Use this checklist to ensure quality and completeness when producing a requirements document.
+
+---
+
+## Quick Reference (delivery gate)
+
+```markdown
+## Document Structure
+- [ ] Clear introduction and problem statement
+- [ ] Glossary with all domain terms in `Underscore_Case`
+- [ ] User stories: specific role, concrete action, distinct benefit
+- [ ] EARS-formatted acceptance criteria (3–8 per requirement)
+- [ ] Non-functional requirements
+- [ ] Constraints and assumptions stated
+
+## Quality Check
+- [ ] Every criterion is objectively testable
+- [ ] No vague language ("user-friendly", "fast", "as needed")
+- [ ] Happy path and error path covered for each requirement
+- [ ] Every domain term used in criteria is in the Glossary
+- [ ] No requirement exceeds 8 criteria
+- [ ] Error paths include HTTP codes, messages, or UI states
+- [ ] All stakeholders have reviewed and approved
+```
+
+---
+
 ## Initial Requirements Gathering
 
 ### Content Quality
@@ -72,26 +99,3 @@
 - [ ] **Technical Review**: Technical team has validated feasibility
 - [ ] **User Validation**: End users have provided input where appropriate
 - [ ] **Compliance Check**: Regulatory and policy requirements are met
-
----
-
-## Quick Reference (delivery gate)
-
-```markdown
-## Document Structure
-- [ ] Clear introduction and problem statement
-- [ ] Glossary with all domain terms in `Underscore_Case`
-- [ ] User stories: specific role, concrete action, distinct benefit
-- [ ] EARS-formatted acceptance criteria (3–8 per requirement)
-- [ ] Non-functional requirements
-- [ ] Constraints and assumptions stated
-
-## Quality Check
-- [ ] Every criterion is objectively testable
-- [ ] No vague language ("user-friendly", "fast", "as needed")
-- [ ] Happy path and error path covered for each requirement
-- [ ] Every domain term used in criteria is in the Glossary
-- [ ] No requirement exceeds 8 criteria
-- [ ] Error paths include HTTP codes, messages, or UI states
-- [ ] All stakeholders have reviewed and approved
-```
