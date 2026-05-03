@@ -1,12 +1,10 @@
 # Validate Requirements Guide
 
-Run this validation before presenting the requirements document to the user. It ensures complete coverage, correct format, and readiness for the design phase.
+Run before presenting the requirements document. Ensures complete coverage, correct format, and design-phase readiness.
 
 ---
 
 ## Coverage Checklist
-
-Work through each item sequentially.
 
 - [ ] **Every described feature has at least 1 requirement** — if the user mentioned a feature, there is a requirement for it
 - [ ] **Every domain term used in criteria is defined in the Glossary** — scan each criterion for nouns; look each up in the Glossary
@@ -105,7 +103,7 @@ Split a requirement if any of these are true:
 
 ## Complex Systems — Additional Checklist
 
-Apply these checks when requirements cover distributed, multi-service, or high-throughput systems. They address the most common underspecification patterns in complex architectures.
+Apply when requirements cover distributed, multi-service, or high-throughput systems.
 
 - [ ] **Performance targets are quantified** — no "fast" or "scalable"; use exact numbers: response time in ms (p95/p99), throughput in RPS or events/second, max concurrent users
 - [ ] **Uptime and availability targets are stated** — percentage (e.g., 99.9%) and how it is measured (Health_Check polling, synthetic monitoring)
@@ -116,13 +114,13 @@ Apply these checks when requirements cover distributed, multi-service, or high-t
 - [ ] **Eventual consistency is acknowledged** — if async/event-driven communication is used, the acceptable consistency window and conflict resolution strategy are stated
 - [ ] **Rate limiting behavior is specified** — limit per client, enforcement scope (per service or at gateway), and the exact error response when the limit is exceeded
 
-> These checks come from recurring underspecification patterns observed across distributed system implementations. Each represents a requirement class that appears obvious during development but is expensive to retrofit in production.
+> These patterns appear obvious during development but are expensive to retrofit in production.
 
 ---
 
 ## Automation Options
 
-Manual validation covers the most important checks; automate the mechanical ones if the team maintains a spec repository.
+Automate the mechanical checks if the team maintains a spec repository.
 
 | What to automate | Tool / Approach |
 |---|---|
