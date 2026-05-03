@@ -67,3 +67,9 @@ Claude Code · Cursor · VS Code · Windsurf · Kiro · GitHub Copilot · Antigr
 ## License
 
 MIT — [salomao-santos](https://github.com/salomao-santos)
+
+---
+
+## References
+
+- [Kiro](https://github.com/jasonkneen/kiro) — used as a reference for the requirements and design engineering methodology applied in this project.
