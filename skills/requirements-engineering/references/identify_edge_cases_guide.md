@@ -1,12 +1,12 @@
 # Identify Edge Cases Guide
 
-Edge cases are the scenarios beyond the happy path — empty inputs, boundary values, failures, unauthorized access, and concurrent usage. Skipping them produces requirements that look complete but fail in production.
+Edge cases are scenarios beyond the happy path: empty inputs, boundary values, failures, unauthorized access, and concurrent usage. Skipping them produces requirements that look complete but fail in production.
 
 ---
 
 ## The 5-Question Checklist
 
-Apply these questions to every requirement before declaring it done:
+Apply to every requirement before marking it done:
 
 | # | Question | What to look for |
 |---|---|---|
@@ -80,7 +80,7 @@ IF the search query returns no results, THEN THE Dashboard SHALL display
 
 ## Property-Based Testing (PBT) Patterns
 
-Use the `FOR ALL` construction for any requirement involving data transformation, serialization, or stateful operations. These map directly to property-based test implementations.
+Use `FOR ALL` for requirements involving data transformation, serialization, or stateful operations. These map directly to property-based test implementations.
 
 | Property Type | Definition | EARS Construction |
 |---|---|---|
@@ -124,6 +124,6 @@ SHALL remain unchanged.
 An edge case becomes a separate requirement when it:
 - Involves a distinct User Story (different persona or different motivating value)
 - Requires its own set of UI states or user interactions
-- Has 3 or more criteria of its own
+- Would add 3 or more criteria, pushing the parent requirement's total above 8
 
 Otherwise, add it as additional `IF`/`WHEN` criteria within the existing requirement. Keep related behaviors together when the user story is the same.

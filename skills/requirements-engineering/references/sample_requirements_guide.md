@@ -1,6 +1,6 @@
 # Sample Requirements Guide
 
-Complete, filled-in examples across all requirement types. Use these as reference when writing requirements for a project.
+Complete examples across all requirement types.
 
 ---
 
@@ -37,7 +37,7 @@ Complete, filled-in examples across all requirement types. Use these as referenc
 3. WHEN the user fills required fields and confirms, THE REST_API SHALL create a new Task with Status "To Do" and return HTTP 201.
 4. WHEN the Task is created successfully, THE Dashboard SHALL display the new Task_Card in the "To Do" Kanban_Column and increment the Status_Counter by 1.
 5. IF the user submits the form with an empty title, THEN THE Task_Form SHALL display the message "Title is required" directly below the title input.
-6. THE Task_Form SHALL NOT allow submission while the title field is empty (submit button disabled).
+6. THE Task_Form SHALL NOT allow submission while the title field is empty.
 
 ---
 

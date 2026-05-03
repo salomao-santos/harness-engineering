@@ -15,13 +15,13 @@ compatibility: Claude Code, Cursor, VS Code, Windsurf, Kiro, Github Copilot, Ant
 metadata:
   category: methodology
   complexity: intermediate
-  author: Jenny Santos
+  author: Salomão da Silva Santos
   version: "2.0.0"
 ---
 
 # Requirements Engineering
 
-Transform vague feature ideas into structured, testable requirements before any design or code is written. This skill applies the EARS (Easy Approach to Requirements Syntax) format to produce unambiguous acceptance criteria that serve directly as test specifications.
+Transforms vague feature ideas into structured, testable requirements before design or code. Applies EARS (Easy Approach to Requirements Syntax) format to produce unambiguous acceptance criteria that serve as test specifications.
 
 ## When to Use This Skill
 
@@ -38,7 +38,7 @@ Transform vague feature ideas into structured, testable requirements before any 
 
 ### Step 1: Analyze the Request
 
-Break the feature idea into user-facing behaviors, domain entities, system flows, and constraints. Identify: who uses it, what they need to do, and what the system must enforce. Do not jump to acceptance criteria until the scope is clear.
+Break the feature into user-facing behaviors, domain entities, system flows, and constraints. Identify who uses it, what they need, and what the system must enforce. Do not write acceptance criteria until scope is clear.
 
 ### Step 2: Build the Glossary
 

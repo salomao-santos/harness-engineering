@@ -44,24 +44,6 @@ Run this checklist before delivering `tasks.md` to the user. Every item must pas
 - [ ] **Testing Tasks**: Comprehensive testing tasks are included (unit, integration, PBT)
 - [ ] **Documentation Tasks**: Documentation updates are planned where needed
 
-### Development Strategy
-- [ ] **Test-Driven Approach**: TDD/BDD strategy is defined where appropriate
-- [ ] **Code Quality Standards**: Quality expectations are established
-- [ ] **Review Process**: Code review procedures are planned
-- [ ] **Integration Strategy**: How components will be integrated is clear
-
-### Risk Management
-- [ ] **Technical Risks**: Potential technical challenges are identified
-- [ ] **Dependency Risks**: External dependency risks (libraries, APIs, services) are considered
-- [ ] **Resource Risks**: Team capacity and skill requirements are assessed
-- [ ] **Timeline Risks**: Schedule risks and mitigation strategies are planned
-
-### Stakeholder Review
-- [ ] **Technical Approval**: Development team has reviewed and approved tasks
-- [ ] **Business Alignment**: Tasks align with business priorities and timeline
-- [ ] **Resource Confirmation**: Required resources and skills are available
-- [ ] **Timeline Validation**: Task timeline is realistic and achievable
-
 ---
 
 ## Anti-Patterns to Avoid
