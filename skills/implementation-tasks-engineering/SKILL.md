@@ -205,3 +205,86 @@ organized in 11 phases, derived from requirements.md (12 requirements) and desig
 ## Output
 
 Use the blank template at [assets/tasks-template.md](assets/tasks-template.md) as the starting point for a new `tasks.md` document.
+
+---
+
+## Output Locations
+
+### Primary file (all tools)
+
+Always generate the tasks document at:
+
+```
+<workspace-root>/docs/specs/{feature-name}/tasks.md
+```
+
+### Secondary file (tool-specific)
+
+After generating the primary file, generate **one** secondary file for the active tool only. The secondary file must **reference** the primary — it is not a copy.
+
+#### How to determine the active tool
+
+1. **Detect automatically** — check for tool-specific directories in the workspace root:
+   - `.kiro/` present → **Kiro**
+   - `.github/` present → **GitHub Copilot**
+   - `.agents/` present → **Google Antigravity**
+   - `.claude/` present → **Claude**
+2. **Multiple matches or none found** — ask the user: _"Which tool are you using? (Kiro / GitHub Copilot / Google Antigravity / Claude)"_
+3. **User already stated the tool** in the request — use that, skip detection.
+
+Generate the secondary file **only for the detected/chosen tool**. Do not create folders or files for the others.
+
+| Tool | Secondary file path | Content |
+|------|---------------------|---------|
+| **Kiro** | `<workspace-root>/.kiro/specs/{feature-name}/tasks.md` | Brief prompt that instructs Kiro to use `docs/specs/{feature-name}/tasks.md` |
+| **GitHub Copilot** | `<workspace-root>/.github/prompts/prompt-tasks-{feature-name}.md` | Brief prompt that instructs Copilot to use `docs/specs/{feature-name}/tasks.md` |
+| **Google Antigravity** | `<workspace-root>/.agents/prompts/prompt-tasks-{feature-name}.md` | Brief prompt that instructs Antigravity to use `docs/specs/{feature-name}/tasks.md` |
+| **Claude** | `<workspace-root>/.claude/prompts/prompt-tasks-{feature-name}.md` | Brief prompt that instructs Claude to use `docs/specs/{feature-name}/tasks.md` |
+
+#### Kiro — `tasks.md` format
+
+```markdown
+# Prompt: Implementation Tasks for {Feature Name}
+
+Use the implementation tasks document located at:
+`docs/specs/{feature-name}/tasks.md`
+
+When implementing **{Feature Name}**, load that file for the full task list,
+phases, sub-tasks, and traceability links before starting any coding.
+```
+
+#### GitHub Copilot — prompt file format
+
+```markdown
+# Prompt: Implementation Tasks for {Feature Name}
+
+Use the implementation tasks document located at:
+`docs/specs/{feature-name}/tasks.md`
+
+When implementing **{Feature Name}**, load that file for the full task list,
+phases, sub-tasks, and traceability links before starting any coding.
+```
+
+#### Google Antigravity — prompt file format
+
+```markdown
+# Prompt: Implementation Tasks for {Feature Name}
+
+Use the implementation tasks document located at:
+`docs/specs/{feature-name}/tasks.md`
+
+When implementing **{Feature Name}**, load that file for the full task list,
+phases, sub-tasks, and traceability links before starting any coding.
+```
+
+#### Claude — prompt file format
+
+```markdown
+# Prompt: Implementation Tasks for {Feature Name}
+
+Use the implementation tasks document located at:
+`docs/specs/{feature-name}/tasks.md`
+
+When implementing **{Feature Name}**, load that file for the full task list,
+phases, sub-tasks, and traceability links before starting any coding.
+```
