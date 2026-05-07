@@ -6,15 +6,17 @@ description: >
   <workspace-root>/docs/rules/ and tool-specific memory-bank.md files for Kiro,
   GitHub Copilot, Google Antigravity, and Claude. Use when: user asks to create
   steering documents, AI rules, project rules, memory bank, or context files for AI tools.
-  Trigger phrases: "create steering documents", "create rules", "create AI rules",
-  "create memory bank", "rules engineering", "doc rules", "set up AI context".
+  Trigger phrases: "steering documents", "create steering documents", "generate steering documents",
+  "create rules", "generate rules", "create AI rules", "create memory bank", "rules engineering",
+  "doc rules", "set up AI context", "rules", "instructions", "guardrails", "add guardrails",
+  "create instructions", "generate instructions", "set up rules", "set up instructions".
   Also use when someone wants to teach an AI tool about their project before writing code.
 license: MIT
 compatibility: Claude Code, Cursor, VS Code, Windsurf, Kiro, Github Copilot, Antigravity
 metadata:
   category: methodology
   complexity: intermediate
-  author: Jenny Santos
+  author: Salomão da Silva Santos
   version: "1.0.0"
 ---
 
@@ -29,6 +31,28 @@ Transform workspace context into steering documents that tell AI tools what your
 - Standardizing AI behavior across multiple tools (Kiro, Copilot, Claude, Antigravity)
 - Updating AI context after a major tech or architecture change
 - Ensuring generated code matches the project's patterns and conventions
+
+---
+
+## Sample Prompts
+
+**Steering documents:**
+- Create steering documents for a React TypeScript e-commerce application
+- Create steering documents for a Python Django REST API with PostgreSQL
+- Create steering documents for a Node.js microservices architecture
+- Create steering documents for a Vue.js component library
+
+**Rules documents:**
+- Create rules documents for a React TypeScript e-commerce application
+- Create rules documents for a Python Django REST API with PostgreSQL
+- Create rules documents for a Node.js microservices architecture
+- Create rules documents for a Vue.js component library
+
+**Instructions documents:**
+- Create instructions documents for a React TypeScript e-commerce application
+- Create instructions documents for a Python Django REST API with PostgreSQL
+- Create instructions documents for a Node.js microservices architecture
+- Create instructions documents for a Vue.js component library
 
 ---
 
