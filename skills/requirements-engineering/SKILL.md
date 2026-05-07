@@ -158,20 +158,21 @@ Generate the secondary file **only for the detected/chosen tool**. Do not create
 
 | Tool | Secondary file path | Content |
 |------|---------------------|---------|
-| **Kiro** | `<workspace-root>/.kiro/specs/{feature-name}/memory-bank.md` | Reference to `docs/specs/{feature-name}/requirements.md` |
+| **Kiro** | `<workspace-root>/.kiro/specs/{feature-name}/requirements.md` | Brief prompt that instructs Kiro to use `docs/specs/{feature-name}/requirements.md` |
 | **GitHub Copilot** | `<workspace-root>/.github/prompts/prompt-requirements-{feature-name}.md` | Brief prompt that instructs Copilot to use `docs/specs/{feature-name}/requirements.md` |
 | **Google Antigravity** | `<workspace-root>/.agents/prompts/prompt-requirements-{feature-name}.md` | Brief prompt that instructs Antigravity to use `docs/specs/{feature-name}/requirements.md` |
 | **Claude** | `<workspace-root>/.claude/prompts/prompt-requirements-{feature-name}.md` | Brief prompt that instructs Claude to use `docs/specs/{feature-name}/requirements.md` |
 
-#### Kiro — `memory-bank.md` format
+#### Kiro — `requirements.md` format
 
 ```markdown
-# Requirements — {Feature Name}
+# Prompt: Requirements for {Feature Name}
 
-> Source of truth: [docs/specs/{feature-name}/requirements.md](../../docs/specs/{feature-name}/requirements.md)
+Use the requirements document located at:
+`docs/specs/{feature-name}/requirements.md`
 
-This memory-bank entry points to the approved requirements document for **{Feature Name}**.
-Refer to the linked file for the full Glossary, User Stories, and Acceptance Criteria.
+When implementing or reviewing code related to **{Feature Name}**, load that file for the
+full Glossary, User Stories, and Acceptance Criteria before suggesting any changes.
 ```
 
 #### GitHub Copilot — prompt file format
