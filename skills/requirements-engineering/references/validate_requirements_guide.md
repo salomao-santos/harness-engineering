@@ -131,7 +131,7 @@ Manual validation covers the most important checks; automate the mechanical ones
 | Requirements-to-tickets traceability | GitHub Actions workflow that maps requirement IDs to open issues or epics |
 | Spec file structure | Pre-commit git hook that validates required sections exist in requirements.md |
 
-For version-controlled specs, store documents under `.kiro/specs/{feature-name}/requirements.md` and run validation on every pull request touching that path.
+For version-controlled specs, store documents under `docs/specs/{feature-name}/requirements.md` and run validation on every pull request touching that path.
 
 ---
 

@@ -127,3 +127,85 @@ Before delivering, run the checklist in [checklist_guide.md](references/checklis
 Use the blank template at [assets/requirements-template.md](assets/requirements-template.md) as the starting point for a new requirements document.
 
 For complete worked examples across all requirement types (UI Layout, CRUD, API, Accessibility, PBT), see [sample_requirements_guide.md](references/sample_requirements_guide.md).
+
+---
+
+## Output Locations
+
+### Primary file (all tools)
+
+Always generate the requirements document at:
+
+```
+<workspace-root>/docs/specs/{feature-name}/requirements.md
+```
+
+### Secondary file (tool-specific)
+
+After generating the primary file, generate **one** secondary file for the active tool only. The secondary file must **reference** the primary — it is not a copy.
+
+#### How to determine the active tool
+
+1. **Detect automatically** — check for tool-specific directories in the workspace root:
+   - `.kiro/` present → **Kiro**
+   - `.github/` present → **GitHub Copilot**
+   - `.agents/` present → **Google Antigravity**
+   - `.claude/` present → **Claude**
+2. **Multiple matches or none found** — ask the user: _"Which tool are you using? (Kiro / GitHub Copilot / Google Antigravity / Claude)"_
+3. **User already stated the tool** in the request — use that, skip detection.
+
+Generate the secondary file **only for the detected/chosen tool**. Do not create folders or files for the others.
+
+| Tool | Secondary file path | Content |
+|------|---------------------|---------|
+| **Kiro** | `<workspace-root>/.kiro/specs/{feature-name}/memory-bank.md` | Reference to `docs/specs/{feature-name}/requirements.md` |
+| **GitHub Copilot** | `<workspace-root>/.github/prompts/prompt-requirements-{feature-name}.md` | Brief prompt that instructs Copilot to use `docs/specs/{feature-name}/requirements.md` |
+| **Google Antigravity** | `<workspace-root>/.agents/prompts/prompt-requirements-{feature-name}.md` | Brief prompt that instructs Antigravity to use `docs/specs/{feature-name}/requirements.md` |
+| **Claude** | `<workspace-root>/.claude/prompts/prompt-requirements-{feature-name}.md` | Brief prompt that instructs Claude to use `docs/specs/{feature-name}/requirements.md` |
+
+#### Kiro — `memory-bank.md` format
+
+```markdown
+# Requirements — {Feature Name}
+
+> Source of truth: [docs/specs/{feature-name}/requirements.md](../../docs/specs/{feature-name}/requirements.md)
+
+This memory-bank entry points to the approved requirements document for **{Feature Name}**.
+Refer to the linked file for the full Glossary, User Stories, and Acceptance Criteria.
+```
+
+#### GitHub Copilot — prompt file format
+
+```markdown
+# Prompt: Requirements for {Feature Name}
+
+Use the requirements document located at:
+`docs/specs/{feature-name}/requirements.md`
+
+When implementing or reviewing code related to **{Feature Name}**, load that file for the
+full Glossary, User Stories, and Acceptance Criteria before suggesting any changes.
+```
+
+#### Google Antigravity — prompt file format
+
+```markdown
+# Prompt: Requirements for {Feature Name}
+
+Use the requirements document located at:
+`docs/specs/{feature-name}/requirements.md`
+
+When implementing or reviewing code related to **{Feature Name}**, load that file for the
+full Glossary, User Stories, and Acceptance Criteria before suggesting any changes.
+```
+
+#### Claude — prompt file format
+
+```markdown
+# Prompt: Requirements for {Feature Name}
+
+Use the requirements document located at:
+`docs/specs/{feature-name}/requirements.md`
+
+When implementing or reviewing code related to **{Feature Name}**, load that file for the
+full Glossary, User Stories, and Acceptance Criteria before suggesting any changes.
+```
