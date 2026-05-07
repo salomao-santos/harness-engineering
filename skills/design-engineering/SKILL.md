@@ -162,3 +162,86 @@ erDiagram
 Use the blank template at [assets/design-template.md](assets/design-template.md) as the starting point for a new design document.
 
 For complete filled-in examples (Kanban task manager, minimal notes app), see [sample-design-guide.md](references/sample-design-guide.md).
+
+---
+
+## Output Locations
+
+### Primary file (all tools)
+
+Always generate the design document at:
+
+```
+<workspace-root>/docs/specs/{feature-name}/design.md
+```
+
+### Secondary file (tool-specific)
+
+After generating the primary file, generate **one** secondary file for the active tool only. The secondary file must **reference** the primary — it is not a copy.
+
+#### How to determine the active tool
+
+1. **Detect automatically** — check for tool-specific directories in the workspace root:
+   - `.kiro/` present → **Kiro**
+   - `.github/` present → **GitHub Copilot**
+   - `.agents/` present → **Google Antigravity**
+   - `.claude/` present → **Claude**
+2. **Multiple matches or none found** — ask the user: _"Which tool are you using? (Kiro / GitHub Copilot / Google Antigravity / Claude)"_
+3. **User already stated the tool** in the request — use that, skip detection.
+
+Generate the secondary file **only for the detected/chosen tool**. Do not create folders or files for the others.
+
+| Tool | Secondary file path | Content |
+|------|---------------------|---------|
+| **Kiro** | `<workspace-root>/.kiro/specs/{feature-name}/design.md` | Brief prompt that instructs Kiro to use `docs/specs/{feature-name}/design.md` |
+| **GitHub Copilot** | `<workspace-root>/.github/prompts/prompt-design-{feature-name}.md` | Brief prompt that instructs Copilot to use `docs/specs/{feature-name}/design.md` |
+| **Google Antigravity** | `<workspace-root>/.agents/prompts/prompt-design-{feature-name}.md` | Brief prompt that instructs Antigravity to use `docs/specs/{feature-name}/design.md` |
+| **Claude** | `<workspace-root>/.claude/prompts/prompt-design-{feature-name}.md` | Brief prompt that instructs Claude to use `docs/specs/{feature-name}/design.md` |
+
+#### Kiro — `.kiro/specs/{feature-name}/design.md` format
+
+```markdown
+# Prompt: Design for {Feature Name}
+
+Use the design document located at:
+`docs/specs/{feature-name}/design.md`
+
+When implementing or reviewing code related to **{Feature Name}**, load that file for the
+full Architecture Decisions, Component Interfaces, Data Models, and API contracts before suggesting any changes.
+```
+
+#### GitHub Copilot — prompt file format
+
+```markdown
+# Prompt: Design for {Feature Name}
+
+Use the design document located at:
+`docs/specs/{feature-name}/design.md`
+
+When implementing or reviewing code related to **{Feature Name}**, load that file for the
+full Architecture Decisions, Component Interfaces, Data Models, and API contracts before suggesting any changes.
+```
+
+#### Google Antigravity — prompt file format
+
+```markdown
+# Prompt: Design for {Feature Name}
+
+Use the design document located at:
+`docs/specs/{feature-name}/design.md`
+
+When implementing or reviewing code related to **{Feature Name}**, load that file for the
+full Architecture Decisions, Component Interfaces, Data Models, and API contracts before suggesting any changes.
+```
+
+#### Claude — prompt file format
+
+```markdown
+# Prompt: Design for {Feature Name}
+
+Use the design document located at:
+`docs/specs/{feature-name}/design.md`
+
+When implementing or reviewing code related to **{Feature Name}**, load that file for the
+full Architecture Decisions, Component Interfaces, Data Models, and API contracts before suggesting any changes.
+```
