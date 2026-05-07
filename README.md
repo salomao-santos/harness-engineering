@@ -14,7 +14,39 @@ Software engineering methodology plugin for Claude Code. Covers the full deliver
 
 ---
 
-## Install as Claude Code Plugin
+## Install
+
+### Cursor, Windsurf, Cline, GitHub Copilot, Kiro, and 30+ agents
+
+```bash
+npx skills add salomao-santos/harness-engineering -a <cursor|windsurf|cline|github-copilot|kiro>
+```
+
+Auto-detect your agent (no `-a` flag needed):
+
+```bash
+npx skills add salomao-santos/harness-engineering
+```
+
+The CLI reads the `skills/` directory directly from this repo and injects the skills into the right place for each agent:
+
+| Agent | Where skills are injected |
+|-------|--------------------------|
+| GitHub Copilot | `.github/skills/` |
+| Cursor | `.cursor/rules/` |
+| Windsurf | `.windsurf/rules/` |
+| Cline | `.clinerules/` |
+| Kiro | `.kiro/skills/` |
+
+Remove at any time:
+
+```bash
+npx skills remove harness-engineering
+```
+
+---
+
+### Claude Code Plugin
 
 ```bash
 claude plugin install https://github.com/salomao-santos/harness-engineering
